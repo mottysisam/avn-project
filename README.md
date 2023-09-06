@@ -1,4 +1,4 @@
-# avn-email-validator
+# avn-project
 
 This project is an automated CI/CD pipeline that deploys a messaging system on LocalStack. It includes two Python microservices that interact with simulated AWS resources: ECS, S3, EC2-ELB, and SQS. The aim was to provide a simple, cloud-like development environment on a local machine.
 
