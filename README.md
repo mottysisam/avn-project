@@ -47,10 +47,10 @@ Instructions to set up the local development environment.
 
 \`\`\`bash
 # Clone the repository
-git clone https://github.com/mottysisam/avn-email-validator.git
+git clone https://github.com/mottysisam/avn-project.git
 
 # Navigate into the directory
-cd avn-email-validator
+cd avn-project
 
 # Add installation steps here
 \`\`\`
