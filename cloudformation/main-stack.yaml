@@ -1,0 +1,33 @@
+Resources:
+  MyBucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: "my-bucket"
+
+  MyQueue:
+    Type: "AWS::SQS::Queue"
+    Properties:
+      QueueName: "my-queue"
+
+  MyCluster:
+    Type: "AWS::ECS::Cluster"
+    Properties:
+      ClusterName: "my-cluster"
+      
+  MyECRRepository:
+    Type: "AWS::ECR::Repository"
+    Properties: 
+      RepositoryName: "my-ecr-repo"
+      RepositoryPolicyText: 
+        Version: "2012-10-17"
+        Statement: 
+          - 
+            Effect: "Allow"
+            Principal: "*"
+            Action: 
+              - "ecr:GetDownloadUrlForLayer"
+              - "ecr:BatchCheckLayerAvailability"
+              - "ecr:PutImage"
+              - "ecr:InitiateLayerUpload"
+              - "ecr:UploadLayerPart"
+              - "ecr:CompleteLayerUpload"      
